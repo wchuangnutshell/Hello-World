@@ -5,16 +5,17 @@ from PIL import Image
 def median(list):
     x=sorted(list)
     #print(x[len(x)//2])
-    #return x[len(x)//2]
-    length = len(x)
-    sorts = sorted(x)
+    return x[len(x)//2]
+    ############the following is according to the original def. of median"###############
+    #length = len(x)
+    #sorts = sorted(x)
 
-    if length % 2==0:
+    #if length % 2==0:
         #print((sorts[int(length / 2)] + sorts[int(length / 2 - 1)]) / 2.0)
-        return (sorts[int(length / 2)] + sorts[int(length / 2 - 1)]) / 2.0
-    else:
+     #   return (sorts[int(length / 2)] + sorts[int(length / 2 - 1)]) / 2.0
+    #else:
         #print(sorts[int(length / 2)])
-        return sorts[int(length / 2)]
+     #   return sorts[int(length / 2)]
 def getpixel(i,x,y):
     width,height = i.size
     pixel=i.load()
